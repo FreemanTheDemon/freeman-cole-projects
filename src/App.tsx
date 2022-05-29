@@ -1,6 +1,9 @@
 import React from 'react';
+import bon from './assets/bon.wav';
+import { useStyles } from 'react-styles-hook'
 import './App.css';
 
+<<<<<<< HEAD
 function App() {
   const classes = {
     wrapper: {
@@ -11,6 +14,13 @@ function App() {
      flex: '1',
     },
   }
+=======
+const styles = useStyles({
+})
+
+const App = () => {
+  const audio = new Audio(bon);
+>>>>>>> cfe060db7411ea853963309c3e98238829c9d887
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +28,9 @@ function App() {
         <p>
           Freeman and Cole's Website!
         </p>
+        <button onClick={() => {audio.play()}}>
+          Home Music
+        </button>
       </header>
       <body>
         {/* <div id={classes.colesSide}> */}
