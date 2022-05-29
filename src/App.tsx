@@ -2,6 +2,15 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const classes = {
+    wrapper: {
+      display: 'flex',
+      backgroundColor: 'purple',
+    },
+    colesSide: {
+     flex: '1',
+    },
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +19,16 @@ function App() {
           Freeman and Cole's Website!
         </p>
       </header>
+      <body>
+        {/* <div id={classes.colesSide}> */}
+        Coles Projects:
+        {/* </div> */}
+      </body>
+      <footer>
+        <p>
+          All rights and privilages reserved for the exclusive use of Freeman and Cole.
+        </p>
+      </footer>
     </div>
   );
 }
