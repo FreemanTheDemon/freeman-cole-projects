@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
     left: "0",
     bottom: "0",
     width: '100%',
-    height: '20vh'
+    height: '20vh',
   },
   footerItem: {
     flex: '1'
@@ -33,7 +33,7 @@ const Footer = () => {
     <div className={classes.footer}>
       <img className={clsx(classes.footerItem, classes.footerImage)} src={jesusImg} />
       <p>
-        © All rights and privilages reserved for the exclusive use of Freeman and Cole.
+        ©2022 All rights and privileges belong exclusively to Freeman and Cole.
       </p>
       <img className={clsx(classes.footerItem, classes.flipImage, classes.footerImage)} src={jesusImg} />
     </div>

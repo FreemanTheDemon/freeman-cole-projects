@@ -63,7 +63,7 @@ const Header = () => {
     audioRef.current.pause();
   };
   return (
-    <header className={classes.header}>
+    <div className={classes.header}>
       <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Buddhist_Swastika_with_24_Beads.svg/2048px-Buddhist_Swastika_with_24_Beads.svg.png' className={classes.logo} alt="logo" />
       <p className={classes.title}>
         Freeman and Cole's Website!
@@ -73,7 +73,7 @@ const Header = () => {
       }>
         <img className={classes.playPause} src={playing ? pauseImg : playImg} />
       </button>
-    </header>
+    </div>
   )
 }
 
