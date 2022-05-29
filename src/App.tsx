@@ -1,6 +1,10 @@
 import React from 'react';
 import bon from './assets/bon.wav';
+import { useStyles } from 'react-styles-hook'
 import './App.css';
+
+const styles = useStyles({
+})
 
 const App = () => {
   const audio = new Audio(bon);
