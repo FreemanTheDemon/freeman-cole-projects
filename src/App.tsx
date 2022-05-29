@@ -3,9 +3,9 @@ import bon from './assets/bon.wav';
 import { useStyles } from 'react-styles-hook'
 import './App.css';
 
-<<<<<<< HEAD
-function App() {
-  const classes = {
+
+const App = () => {
+  const classes = useStyles({
     wrapper: {
       display: 'flex',
       backgroundColor: 'purple',
@@ -13,14 +13,9 @@ function App() {
     colesSide: {
      flex: '1',
     },
-  }
-=======
-const styles = useStyles({
-})
+  })
 
-const App = () => {
   const audio = new Audio(bon);
->>>>>>> cfe060db7411ea853963309c3e98238829c9d887
   return (
     <div className="App">
       <header className="App-header">
