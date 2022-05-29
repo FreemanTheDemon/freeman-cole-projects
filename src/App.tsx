@@ -1,7 +1,9 @@
 import React from 'react';
+import bon from './assets/bon.wav';
 import './App.css';
 
-function App() {
+const App = () => {
+  const audio = new Audio(bon);
   return (
     <div className="App">
       <header className="App-header">
@@ -9,6 +11,9 @@ function App() {
         <p>
           Freeman and Cole's Website!
         </p>
+        <button onClick={() => {audio.play()}}>
+          Home Music
+        </button>
       </header>
     </div>
   );
