@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
-import Project from './Project';
+import Project from './project';
 
 const useStyles = makeStyles(() => ({
   projectsWrapper: {
@@ -88,9 +88,9 @@ const collabProjects = [
 
 const freemanProjects = [
   {
-    title: 'testProject',
+    title: 'Freeman\'s Seleucus Game',
     image: 'https://upload.wikimedia.org/wikipedia/commons/3/34/Seleuco_I_2.JPG',
-    url: 'test'
+    url: 'seleucus'
   },
   {
     title: 'testProject',

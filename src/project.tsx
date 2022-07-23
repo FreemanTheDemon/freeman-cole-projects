@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from "@material-ui/styles";
-
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(() => ({
   projectWrapper: {
@@ -23,7 +23,6 @@ const useStyles = makeStyles(() => ({
   projectImg: {
    width: '100px',
    height: '50px',
-  //  flex: '1',
    border: '1px solid red',
   },
 
@@ -47,9 +46,9 @@ const Project = ({title, image, url}: IProps) => {
     <div className={classes.projectWrapper}>
       <p className={classes.projectTitle}>{title}</p>
       <div className={classes.imgWrapper}>
-        <a href={url}>
+        <Link to={`/${url}`}>
           <img className={classes.projectImg} src={image} alt={`PROJECT_IMAGE_${image}`} />
-        </a>
+        </Link>
       </div>
     </div>
   )
